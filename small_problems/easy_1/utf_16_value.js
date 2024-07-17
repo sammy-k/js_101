@@ -4,7 +4,7 @@ const utf16Value = (str) => {
     totalVal += str.charCodeAt(idx);
   }
   return totalVal;
-}
+};
 
 console.log(utf16Value('Four score'));         // 984
 console.log(utf16Value('Launch School'));      // 1251

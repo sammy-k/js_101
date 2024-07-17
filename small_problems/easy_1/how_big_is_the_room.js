@@ -8,6 +8,3 @@ const areaInSquareMeters = length * width;
 const areaInSquareFeet = areaInSquareMeters * 10.7639;
 
 console.log(`The area of the room is ${areaInSquareMeters} square meters (${areaInSquareFeet} square feet).`);
-
-
-
