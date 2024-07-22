@@ -50,30 +50,36 @@
 
 
 // Question 6
-let flintstones = ["Fred", "Wilma"];
+// let flintstones = ["Fred", "Wilma"];
 
-let flintstonesEach = [];
+// let flintstonesEach = [];
 
-flintstones.concat(['Barney', 'Betty'], ['Bambam', 'Pebbles']).forEach(elem => {
-  flintstonesEach.push(elem);
-});
+// flintstones.concat(['Barney', 'Betty'], ['Bambam', 'Pebbles']).forEach(elem => {
+//   flintstonesEach.push(elem);
+// });
 
-console.log(flintstones);
-console.log(flintstonesEach);
-
-
-// Question 7  *** COME BACK TO THIS ONE ***
-// let flintstones = { Fred: 0, Wilma: 1, Barney: 2, Betty: 3, Bambam: 4, Pebbles: 5 };
-
-// const findBarney = (obj) => {
-//   let barney = [];
-//   for (const [key, value] of Object.entries(obj)) {
-//     if (key === 'Barney') {
-//       barney.push(key, value);
-//     }
-//   }
-//   return barney;
-// };
-// console.log(findBarney(flintstones));
+// console.log(flintstones);
+// console.log(flintstonesEach);
 
 
+// Question 7
+let flintstones =
+{ Fred: 0,
+  Wilma: 1,
+  Barney: 2,
+  Betty: 3,
+  Bambam: 4,
+  Pebbles: 5
+};
+
+const justBarney = (obj) => {
+  let barney = [];
+  for (const [key, value] of Object.entries(obj)) {
+    if (key === 'Barney') {
+      barney.push(key, value);
+    }
+  }
+  return barney;
+};
+
+console.log(justBarney(flintstones));
