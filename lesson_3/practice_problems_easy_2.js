@@ -3,9 +3,9 @@
 // let newAdvice = advice.replaceAll('important', 'urgent');
 // console.log(newAdvice);
 
-// Question 2 ***COME BACK TO THIS ONE***
+// Question 2
 
-let numbers = [1, 2, 3, 4, 5];
+// let numbers = [1, 2, 3, 4, 5];
 
 // Method 1 using reverse
 // let reversedNumbers = numbers.slice(0).reverse();
@@ -18,13 +18,13 @@ let numbers = [1, 2, 3, 4, 5];
 // console.log(reversedNumbers);
 
 // Method 3 using forEach
-let reversedNumbers = [];
-numbers.forEach(num => {
-  reversedNumbers.unshift(num);
-});
+// let reversedNumbers = [];
+// numbers.forEach(num => {
+//   reversedNumbers.unshift(num);
+// });
 
-console.log(numbers);
-console.log(reversedNumbers);
+// console.log(numbers);
+// console.log(reversedNumbers);
 
 
 // Question 3
@@ -49,13 +49,17 @@ console.log(reversedNumbers);
 // console.log(numbers);
 
 
-// Question 6  **COME BACK TO THIS ONE***
-// let flintstones = ["Fred", "Wilma"];
-// flintstones.push(["Barney", "Betty"]);
-// flintstones.push(["Bambam", "Pebbles"]);
+// Question 6
+let flintstones = ["Fred", "Wilma"];
 
-// flintstones = [].concat(...flintstones);
-// console.log(flintstones);
+let flintstonesEach = [];
+
+flintstones.concat(['Barney', 'Betty'], ['Bambam', 'Pebbles']).forEach(elem => {
+  flintstonesEach.push(elem);
+});
+
+console.log(flintstones);
+console.log(flintstonesEach);
 
 
 // Question 7  *** COME BACK TO THIS ONE ***
