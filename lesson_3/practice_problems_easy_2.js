@@ -5,25 +5,26 @@
 
 // Question 2 ***COME BACK TO THIS ONE***
 
-// let numbers = [1, 2, 3, 4, 5];
+let numbers = [1, 2, 3, 4, 5];
 
-// Method 1
-// const reverseArr = (arr) => {
-//   let reversedArr = [];
-//   for (let idx = arr.length - 1; idx >= 0; idx -= 1) {
-//     reversedArr.push(arr[idx]);
-//   }
-//   return reversedArr;
-// };
-
-// let reversedNumbers = reverseArr(numbers);
+// Method 1 using reverse
+// let reversedNumbers = numbers.slice(0).reverse();
 // console.log(numbers);
 // console.log(reversedNumbers);
 
-// Method 2
-// let reversedNumbers = numbers.reverse();
+// Method 2 using sort
+// let reversedNumbers = numbers.slice(0).sort((num1, num2) => num2 - num1);
 // console.log(numbers);
 // console.log(reversedNumbers);
+
+// Method 3 using forEach
+let reversedNumbers = [];
+numbers.forEach(num => {
+  reversedNumbers.unshift(num);
+});
+
+console.log(numbers);
+console.log(reversedNumbers);
 
 
 // Question 3
@@ -58,17 +59,17 @@
 
 
 // Question 7  *** COME BACK TO THIS ONE ***
-let flintstones = { Fred: 0, Wilma: 1, Barney: 2, Betty: 3, Bambam: 4, Pebbles: 5 };
+// let flintstones = { Fred: 0, Wilma: 1, Barney: 2, Betty: 3, Bambam: 4, Pebbles: 5 };
 
-const findBarney = (obj) => {
-  let barney = [];
-  for (const [key, value] of Object.entries(obj)) {
-    if (key === 'Barney') {
-      barney.push(key, value);
-    }
-  }
-  return barney;
-};
-console.log(findBarney(flintstones));
+// const findBarney = (obj) => {
+//   let barney = [];
+//   for (const [key, value] of Object.entries(obj)) {
+//     if (key === 'Barney') {
+//       barney.push(key, value);
+//     }
+//   }
+//   return barney;
+// };
+// console.log(findBarney(flintstones));
 
 
