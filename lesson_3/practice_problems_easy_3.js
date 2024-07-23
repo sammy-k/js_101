@@ -26,5 +26,3 @@
 // console.log(isColorValid('pink')); // false
 // console.log(isColorValid('green')); // true
 // console.log(isColorValid('blue')); // true
-
-
