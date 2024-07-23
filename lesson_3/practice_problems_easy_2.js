@@ -63,23 +63,40 @@
 
 
 // Question 7
-let flintstones =
-{ Fred: 0,
-  Wilma: 1,
-  Barney: 2,
-  Betty: 3,
-  Bambam: 4,
-  Pebbles: 5
-};
+// let flintstones =
+// { Fred: 0,
+//   Wilma: 1,
+//   Barney: 2,
+//   Betty: 3,
+//   Bambam: 4,
+//   Pebbles: 5
+// };
 
-const justBarney = (obj) => {
-  let barney = [];
-  for (const [key, value] of Object.entries(obj)) {
-    if (key === 'Barney') {
-      barney.push(key, value);
-    }
-  }
-  return barney;
-};
+// const justBarney = (obj) => {
+//   let barney = [];
+//   for (const [key, value] of Object.entries(obj)) {
+//     if (key === 'Barney') {
+//       barney.push(key, value);
+//     }
+//   }
+//   return barney;
+// };
 
-console.log(justBarney(flintstones));
+// console.log(justBarney(flintstones));
+
+// Question 8
+// let numbers = [1, 2, 3, 4]; // true
+// let table = { field1: 1, field2: 2, field3: 3, field4: 4 }; // false
+
+// console.log(Array.isArray(numbers)); // true
+// console.log(Array.isArray(table)); // false
+// console.log(Array.isArray(5)); // false
+
+// Question 10
+let statement1 = "The Flintstones Rock!";
+let statement2 = "Easy come, easy go.";
+
+let regex = /t/g;
+
+const totalT = [...statement1.matchAll(regex)].length;
+console.log(totalT(statement1));
