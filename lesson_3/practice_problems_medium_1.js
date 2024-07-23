@@ -27,9 +27,19 @@
 
 // console.log(swapCase(munstersDescription));
 
-// Question 3 ***COME BACK TO THIS ONE***
+// Question 3
+// function factors(number) {
+//   let divisor = number;
+//   let factors = [];
+//   do {
+//     if (number % divisor === 0) {
+//       factors.push(number / divisor);
+//     }
+//     divisor -= 1;
+//   } while (divisor !== 0);
+//   return factors;
+// }
 
-// Question 4 ***COME BACK TO THIS ONE***
 
 // Question 9
 
