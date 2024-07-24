@@ -58,6 +58,7 @@ rules:
     - error
     - code: 80
       tabWidth: 2
+      ignoreComments: true
       ignoreRegExpLiterals: false
       ignoreStrings: true
       ignoreTemplateLiterals: true
