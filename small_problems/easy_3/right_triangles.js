@@ -1,19 +1,16 @@
 const triangle = (num) => {
-  let rightTriangle = '';
-  let lineCount = num;
-  while (lineCount > 0) {
-    for (let idx = 0; idx < num; idx += 1) {
-      idx === num - 1 ? rightTriangle += '*' : rightTriangle += ' ';
-    }
-    rightTriangle += '\n';
-    lineCount -= 1;
+  let star = '';
+  let line = ' '.repeat(num);
+  while (num >= 0) {
+    console.log(line + star);
+    num -= 1;
+    star += '*';
+    line = line.slice(1);
   }
-  return rightTriangle;
 };
 
-
-console.log(triangle(5));
-
+triangle(5);
+//
 //     *
 //    **
 //   ***
@@ -21,7 +18,7 @@ console.log(triangle(5));
 // *****
 
 triangle(9);
-
+//
 //         *
 //        **
 //       ***
