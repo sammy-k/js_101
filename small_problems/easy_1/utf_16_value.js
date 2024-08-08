@@ -6,6 +6,9 @@ const utf16Value = (str) => {
   return totalVal;
 };
 
+// solution using reduce()
+// const utf16Value = (str) => str.split('').reduce((accum, val, idx) => accum + str.charCodeAt(idx), 0);
+
 console.log(utf16Value('Four score'));         // 984
 console.log(utf16Value('Launch School'));      // 1251
 console.log(utf16Value('a'));                  // 97
