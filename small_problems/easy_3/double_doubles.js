@@ -12,6 +12,17 @@ const twice = (num) => {
   }
 };
 
+// another solution
+// const twice = (num) => {
+//   let numString = String(num);
+//   if (numString.length % 2 === 0) {
+//     if (numString.slice(0, numString.length / 2) === numString.slice(numString.length / 2)) {
+//       return num;
+//     }
+//   }
+//   return num * 2;
+// };
+
 console.log(twice(37));          // 74
 console.log(twice(44));          // 44
 console.log(twice(334433));      // 668866

@@ -9,6 +9,13 @@ const logInBox = (str) => {
   console.log(boxStatement);
 };
 
+// another solution
+// const logInBox = (str) => {
+//   let border = `+${'-'.repeat(str.length + 2)}+`;
+//   let padding = `|${' '.repeat(str.length + 2)}|`;
+//   return `${border}\n${padding}\n| ${str} |\n${padding}\n${border}`;
+// };
+
 console.log(logInBox(''));
 // +--+
 // |  |

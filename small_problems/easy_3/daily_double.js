@@ -4,10 +4,8 @@ const crunch = (str) => {
     let currentChar = crunchedStr[idx];
     for (let j = idx + 1; j < crunchedStr.length; j += 1) {
       if (currentChar === crunchedStr[j]) {
-        
       }
     }
-
   }
 }
 
