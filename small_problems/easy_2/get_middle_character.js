@@ -6,6 +6,13 @@ const centerOf = (str) => {
   }
 };
 
+// solution using ternary
+// const centerOf = (str) => {
+//   return str.length % 2 === 1 ?
+//     str[Math.floor(str.length / 2)] :
+//     str.slice((str.length / 2) - 1, (str.length / 2) + 1);
+// };
+
 console.log(centerOf('I Love JavaScript')); // "a"
 console.log(centerOf('Launch School'));     // " "
 console.log(centerOf('Launch'));            // "un"
