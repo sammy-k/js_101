@@ -9,7 +9,18 @@ const triangle = (num) => {
   }
 };
 
-triangle(5);
+// another solution
+// const triangle = (num) => {
+//   let tri = '';
+//   for (let count = 1; count <= num; count += 1) {
+//     tri += ' '.repeat(num - count);
+//     tri += '*'.repeat(count);
+//     tri += '\n';
+//   }
+//   return tri;
+// };
+
+console.log(triangle(5));
 //
 //     *
 //    **
@@ -17,7 +28,7 @@ triangle(5);
 //  ****
 // *****
 
-triangle(9);
+console.log(triangle(9));
 //
 //         *
 //        **

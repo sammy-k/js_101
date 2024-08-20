@@ -1,16 +1,15 @@
 const crunch = (str) => {
-  let crunchedStr = str;
-  for (let idx = 0; idx < crunchedStr.length; idx += 1) {
-    let currentChar = crunchedStr[idx];
-    for (let j = idx + 1; j < crunchedStr.length; j += 1) {
-      if (currentChar === crunchedStr[j]) {
-      }
+  let cleanStr = '';
+  for (let idx = 0; idx < str.length; idx += 1) {
+    if (str[idx] !== str[idx - 1]) {
+      cleanStr += str[idx];
     }
   }
-}
+  return cleanStr;
+};
 
-crunch('ddaaiillyy ddoouubbllee');    // "daily double"
-crunch('4444abcabccba');              // "4abcabcba"
-crunch('ggggggggggggggg');            // "g"
-crunch('a');                          // "a"
-crunch('');                           // ""
+console.log(crunch('ddaaiillyy ddoouubbllee'));    // "daily double"
+console.log(crunch('4444abcabccba'));              // "4abcabcba"
+console.log(crunch('ggggggggggggggg'));            // "g"
+console.log(crunch('a'));                          // "a"
+console.log(crunch(''));                           // ""
